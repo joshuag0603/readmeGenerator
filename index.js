@@ -1,4 +1,5 @@
 import inquirer from "inquirer";
+import fs from "fs";
 
 inquirer.prompt([
     {
@@ -42,4 +43,37 @@ inquirer.prompt([
         message: 'What is your email?',
         name: 'email',
     },
-])
+]).then((res) =>
+    {
+        const readmeTitle = "# Title";
+        const readmeDes = "## Description";
+        let readmeToC = ["## Table of Contents", "[Description](#description)", "[Installation](#installation)", "[Usage](#usage)", "[License](#license)", "[Contributors](#contributors)", "[Questions](#questions)" ];
+        readmeToC = readmeToC.join('\n');
+        const readmeIns = "## Installation";
+        const readmeUse = "## Usage";
+        const readmeLic = "## License";
+        const readmeCont = "## Contributors";
+        const readmeQs = "## Questions";
+
+        const readmeFull = [readmeTitle, res.title, readmeDes, res.description, readmeToC, readmeIns, res.installation, readmeUse, res.usage, readmeLic, res.license, readmeCont, res.contributors, readmeQs, res.username, res.email];
+
+        const readmeText = readmeFull.join('\n');
+
+        fs.writeFile("README.txt", readmeText, (err) => {
+            if (err) console.log(err);
+            else {
+                console.log("README written");
+            }
+        });
+
+        
+        
+
+
+
+
+
+
+
+    }
+  );
