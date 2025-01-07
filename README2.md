@@ -1,0 +1,29 @@
+# pikachu ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+## Description
+pikachu
+
+## Table of Contents
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contributors](#contributors)
+[Questions](#questions)
+
+## Installation
+pikachu
+        
+## Usage
+pikachu
+
+## License
+The license being used for this project is the MIT license. 
+
+## Contributors
+Josh
+
+## Questions
+My Github username is [joshuag0603](https://www.github.com/joshuag0603)
+
+I can be contacted at joshuag0306@gmail.com if you have any questions regarding the project.

@@ -45,35 +45,51 @@ inquirer.prompt([
     },
 ]).then((res) =>
     {
-        const readmeTitle = "# Title";
-        const readmeDes = "## Description";
-        let readmeToC = ["## Table of Contents", "[Description](#description)", "[Installation](#installation)", "[Usage](#usage)", "[License](#license)", "[Contributors](#contributors)", "[Questions](#questions)" ];
-        readmeToC = readmeToC.join('\n');
-        const readmeIns = "## Installation";
-        const readmeUse = "## Usage";
-        const readmeLic = "## License";
-        const readmeCont = "## Contributors";
-        const readmeQs = "## Questions";
+        let readmeText = 
+`# ${res.title} ${renderLicenseBadge(res.license)}
 
-        const readmeFull = [readmeTitle, res.title, readmeDes, res.description, readmeToC, readmeIns, res.installation, readmeUse, res.usage, readmeLic, res.license, readmeCont, res.contributors, readmeQs, res.username, res.email];
+## Description
+${res.description}
 
-        const readmeText = readmeFull.join('\n');
+## Table of Contents
+[Description](#description)
+[Installation](#installation)
+[Usage](#usage)
+[License](#license)
+[Contributors](#contributors)
+[Questions](#questions)
 
-        fs.writeFile("README.txt", readmeText, (err) => {
+## Installation
+${res.installation}
+        
+## Usage
+${res.usage}
+
+## License
+The license being used for this project is the ${res.license} license. 
+
+## Contributors
+${res.contributors}
+
+## Questions
+My Github username is [${res.username}](https://www.github.com/${res.username})
+
+I can be contacted at ${res.email} if you have any questions regarding the project.`;
+
+        fs.writeFile("README2.md", readmeText, (err) => {
             if (err) console.log(err);
             else {
                 console.log("README written");
             }
         });
-
-        
-        
-
-
-
-
-
-
-
+        function renderLicenseBadge(license) {
+            if (license !== 'None') {
+              return `![GitHub license](https://img.shields.io/badge/license-${license.replace(
+                ' ',
+                '_'
+              )}-blue.svg)`;
+            }
+            return '';
+          }
     }
   );
