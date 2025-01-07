@@ -1,1 +1,1 @@
-# readmeGeneratorPikachu
+# readmeGenerator
