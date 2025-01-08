@@ -17,6 +17,7 @@ The project needs the inquirer module to be installed which can be done using th
 The project can be used by running the index.js file from the terminal. The command to do so is "node index.js"
 
 Attached is a video of the project running: 
+<video controls src="README generator project recording.mp4" title="README generator video"></video>
 
 ## License
 The license being used for this project is the MIT license.

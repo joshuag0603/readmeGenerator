@@ -1,7 +1,7 @@
-# Readme Generator ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# README generator ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-Generate readmes
+generates readmes based on input
 
 ## Table of Contents
 [Description](#description)
@@ -15,7 +15,7 @@ Generate readmes
 inquirer
         
 ## Usage
-by running node index.js
+run the command node index.js
 
 ## License
 The license being used for this project is the MIT license. 
