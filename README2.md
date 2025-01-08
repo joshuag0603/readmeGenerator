@@ -1,7 +1,7 @@
-# pikachu ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# Readme Generator ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 ## Description
-pikachu
+Generate readmes
 
 ## Table of Contents
 [Description](#description)
@@ -12,16 +12,16 @@ pikachu
 [Questions](#questions)
 
 ## Installation
-pikachu
+inquirer
         
 ## Usage
-pikachu
+by running node index.js
 
 ## License
 The license being used for this project is the MIT license. 
 
 ## Contributors
-Josh
+Joshua Gilbert
 
 ## Questions
 My Github username is [joshuag0603](https://www.github.com/joshuag0603)
